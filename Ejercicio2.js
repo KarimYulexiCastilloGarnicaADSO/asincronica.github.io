@@ -13,6 +13,8 @@ setTimeout(() => alert(i), 100)
 for (let j = 0; j < 100000000; j++) {
   i++  
 }
-/**La funcion programada se ejecuta despues del bucle y se ejecuta porque tiene un tiempo de espera de 0.1 segundos y el 
- * alert nos muestra el 100000000
+/**La funcion programada se ejecuta despues del bucle y se ejecuta porque javascript es un lenguaje de un 
+ * solo hilo por lo tanto primero se ejecuta el for y luego del tiempo de espera de 0.1 segundos y el alert 
+ * nos muestra el 100000000 porque el valor de i al comienzo es de 0, y al pasar el bulcle y el tiempo el 
+ * valor de i se modifica y por lo tanto toma el valor de 100000000 
  */

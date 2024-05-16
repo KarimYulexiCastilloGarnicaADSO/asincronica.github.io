@@ -5,7 +5,13 @@ argumento
 • devuelva el array final con los elementos que pasaron el "filtro". */
 
 let array = [1, 2, 3, 4, 5]
+let par = (par) => par % 2 === 0
+let numeros = array.filter(par)
 
-let elemento = array.filter(function () {
-  return
-})
+// let elemento = array.filter(function (par) {
+//   return callback + 2
+// })
+
+
+console.log(array)
+console.log(numeros)
