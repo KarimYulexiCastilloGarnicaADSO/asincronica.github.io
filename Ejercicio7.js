@@ -5,18 +5,12 @@
     • sí ningún callback devuelve true, devuelva undefined
 */
 
-function find(element, callback) {
-    for(const element of callback) {
-        if (callback(element)) {
-            return element
-        }
-    }
-    return undefined
+let array = [11, 8, 15]
+
+function mostrar(element) {
+    return element < 10
 }
 
-let array = [8, 2, 3, 40, 33, 50]
-let multiploDe10 = x => x % 10 === 0;
+let menor = array.find(mostrar)
 
-const resultado = find(numeros, multiploDe10);
-console.log(resultado); 
-
+console.log(menor)
