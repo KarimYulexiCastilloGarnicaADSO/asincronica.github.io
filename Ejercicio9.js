@@ -22,8 +22,8 @@ function dropWhile(array, callback) {
     return resultado;
 }
 
-const numeros = [5, 10, 15, 20, 25, 36];
+const numeros = [50, 10, 20, 30, 40, 5];
 const multiploDe10 = (x) => x % 10 === 0;
 
 const final = dropWhile(numeros, multiploDe10);
-console.log(final); // Debería imprimir [20, 25, 36]
+console.log(final); 
