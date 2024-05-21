@@ -5,18 +5,23 @@ después de ms milisegundos, para que podamos agregarle. then, así: */
 
 function delay(ms) {
   
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     
     setTimeout(() => {
       
-      resolve("Se ejecuto la promesa despues del timepo designado en el setTimeout");
+      if (ms === 2000) {
+        reject("Se genero error")
+      }
+      else {
+        resolve("Se ejecuto la promesa despues del timepo designado en el setTimeout");
+      }
     
     }, ms);
   
   });
 
 }
-delay(3000)
+delay(2000)
 
   .then((resultado) => {
 
