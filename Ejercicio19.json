@@ -1,0 +1,19 @@
+{
+  "personas": [
+    {
+      "nombre": "Juan",
+      "edad": 30,
+      "estudia":true
+    },
+    {
+      "nombre": "María",
+      "edad": 25,
+      "estudia":true
+    },
+    {
+      "nombre": "Martha",
+      "edad": 50,
+      "estudia":false
+    }
+  ]
+}
